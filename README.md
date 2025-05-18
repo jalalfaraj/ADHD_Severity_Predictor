@@ -5,18 +5,22 @@ This repository provides an end-to-end machine learning pipeline to predict ADHD
 ## 📁 Project Structure
 
 ├── app.py # Streamlit application for ADHD severity prediction
-├── Clustering_3.py # Code for clustering ADHD severity into 3 levels
-├── feature_engineering.py # Feature engineering and transformation
-├── feature_selection.py # Feature selection using multiple methods
-├── load_clean.py # Data loading and cleaning
-├── model_selection.py # Model training and evaluation (Logistic Regression, RF, XGBoost)
-├── PCA_code.py # PCA transformation and visualization
-├── Visualizing_Clusters.py # Visualizing cluster distribution
-└── README.md # Project documentation
 
-markdown
-Copy
-Edit
+├── Clustering_3_to_10.py # Code for clustering ADHD severity into 3 levels
+
+├── feature_engineering.py # Feature engineering and transformation
+
+├── feature_selection.py # Feature selection using multiple methods
+
+├── load_clean.py # Data loading and cleaning
+
+├── model_selection.py # Model training and evaluation (Logistic Regression, RF, XGBoost)
+
+├── PCA_code.py # PCA transformation and visualization
+
+├── Visualizing_Clusters.py # Visualizing cluster distribution
+
+├── README.md # Project documentation
 
 ---
 
@@ -67,11 +71,13 @@ Copy
 Edit
 http://localhost:8501
 🚀 How to Deploy to Streamlit Cloud
+
 ✅ Step 1: Fork or Clone This Repository
 bash
 Copy
 Edit
 git clone https://github.com/your-username/ADHD-Prediction.git
+
 ✅ Step 2: Sign Up on Streamlit Cloud
 Go to Streamlit Cloud.
 
@@ -87,6 +93,7 @@ Set the app entry point to:
 Copy
 Edit
 app.py
+
 ✅ Step 4: Set Up Dependencies
 Ensure your requirements.txt file includes:
 
@@ -100,12 +107,14 @@ matplotlib
 seaborn
 scikit-learn
 xgboost
+
 ✅ Step 5: Deploy
 Click "Deploy".
 
 Your app will be live, and you will receive a public URL (like https://your-username-your-repo.streamlit.app/).
 
 
+---
 📊 Example Use Case
 Parents enter their child’s details (school engagement, argument frequency, bullying experience, etc.).
 
@@ -114,6 +123,7 @@ The app predicts ADHD severity (1-3) and provides actionable recommendations.
 Parents can see how their child's values compare to the average values of non-compromised children.
 
 
+---
 💡 How to Extend This Project
 Add new behavioral or medical features to improve prediction accuracy.
 
@@ -124,9 +134,9 @@ Use GridSearchCV for hyperparameter optimization in model_selection.py.
 Deploy the Streamlit app on Streamlit Cloud or any cloud provider (AWS, Azure, GCP).
 
 
-
+---
 Make sure your requirements.txt is correctly formatted and includes all necessary packages.
 
 
-❤️ Acknowledgements
+Acknowledgements
 Data source: https://www.childhealthdata.org/
