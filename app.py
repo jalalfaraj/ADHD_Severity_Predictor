@@ -12,8 +12,8 @@ import pickle
 import matplotlib.pyplot as plt
 
 # Load the trained model and scaler
-model = pickle.load(open('/Users/user/Desktop/Data Science Projects/ADHD_Divorce/results/best_adhd_model.pkl', 'rb'))
-scaler = pickle.load(open('/Users/user/Desktop/Data Science Projects/ADHD_Divorce/results/scaler.pkl', 'rb'))
+model = pickle.load(open('best_adhd_model.pkl'', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 # Streamlit App Title and Description
 st.title('ADHD Severity Prediction (1-3)')
