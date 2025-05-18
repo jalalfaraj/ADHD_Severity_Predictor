@@ -12,7 +12,7 @@ import pickle
 import matplotlib.pyplot as plt
 
 # Load the trained model and scaler
-model = pickle.load(open('best_adhd_model.pkl'', 'rb'))
+model = pickle.load(open('best_adhd_model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 # Streamlit App Title and Description
